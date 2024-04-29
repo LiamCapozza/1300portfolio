@@ -1,0 +1,44 @@
+* {
+  font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-and-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ciao {
+  font-size: 70px;
+}
+
+.liam {
+  font-size: 40px;
+}
+
+.mountains-icon {
+  height: 400px;
+  padding-bottom: 30px;
+  margin-left: 50px;
+}
+
+.intro-info {
+  width: 60%;
+  line-height: 40px;
+  text-align: center;
+  font-size: larger;
+}
