@@ -8,6 +8,45 @@
     <title>Liam Capozza</title>
   </head>
   <body>
+    <script>
+      function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar.style.width === "250px") {
+          sidebar.style.width = "0";
+        } else {
+          sidebar.style.width = "250px";
+        }
+      }
+
+      function scrollToSection(sectionId) {
+        var elem = document.querySelector("." + sectionId);
+        elem.scrollIntoView({ behavior: "smooth", block: "start" });
+        toggleSidebar();
+      }
+    </script>
+    <img
+      onclick="toggleSidebar()"
+      class="sidebarToggle"
+      src="Hiking Sign Clipart.jpg"
+    />
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" onclick="scrollToSection('intro')">Intro</a>
+      <a href="javascript:void(0)" onclick="scrollToSection('case-studies')"
+        >Case Studies</a
+      >
+      <a href="javascript:void(0)" onclick="scrollToSection('iterative-design')"
+        >&ensp; Iterative Design</a
+      >
+      <a href="javascript:void(0)" onclick="scrollToSection('personas')"
+        >&ensp; Personas</a
+      >
+      <a href="javascript:void(0)" onclick="scrollToSection('development')"
+        >&ensp; Development</a
+      >
+      <a href="javascript:void(0)" onclick="scrollToSection('about')"
+        >About Me</a
+      >
+    </div>
     <header>
       <div class="intro">
         <div class="title-and-image">
@@ -15,7 +54,11 @@
             <h1 class="ciao">Ciao!</h1>
             <h2 class="liam">I'm Liam Capozza</h2>
           </div>
-          <img class="mountains-icon" src="mountains-icon.png" />
+          <img
+            class="mountains-icon"
+            src="mountains-icon.png"
+            alt="3 mountains clipart"
+          />
         </div>
         <p class="intro-info">
           Hi, I'm Liam Capozza from Providence, RI. From my love of coding,
@@ -34,7 +77,11 @@
     </header>
     <section class="case-studies">
       <h1>Case Studies</h1>
-      <img class="case-study-mountain" src="mountains-icon copy.png" />
+      <img
+        class="case-study-mountain"
+        src="mountains-icon copy.png"
+        alt="mountain depicting each of the case studies explored in this portfolio"
+      />
     </section>
     <section class="iterative-design">
       <h1>Iterative Design</h1>
@@ -59,7 +106,11 @@
       </div>
       <h2>Starting Out</h2>
       <div class="given-info">
-        <img class="given-website" src="fonda-desktop.png" />
+        <img
+          class="given-website"
+          src="fonda-desktop.png"
+          alt="given website, bland bank statements"
+        />
         <p>
           This is the Fonda current website and they do not have an app. Our
           project group was tasked with creating an app to display the
@@ -81,12 +132,20 @@
           and on the go. It applied more mobile practices and was the flow I
           ultimately pulled the most from throughout the project.
         </p>
-        <img class="liams-sketches" src="liamsketches.png" />
+        <img
+          class="liams-sketches"
+          src="liamsketches.png"
+          alt="crude sketches of the first thoughts about the Fonda App"
+        />
       </div>
       <h2>Collaborating and Wireframing</h2>
 
       <div class="fonda-wireframes">
-        <img class="wireframes" src="wireframes.png" />
+        <img
+          class="wireframes"
+          src="wireframes.png"
+          alt="low fidelity wireframes in black and white of the Fonda App"
+        />
         <p>
           We had a basic login screen that was up to par with one’s found on
           many types of apps. We wanted to keep things simple and modern. The
@@ -115,7 +174,11 @@
           colors, since part of our feedback was changing the transactions to
           have a light background instead of dark.
         </p>
-        <img class="high-fidelity" src="high-fidelity.png" />
+        <img
+          class="high-fidelity"
+          src="high-fidelity.png"
+          al="high fidelity mockups of the Fonda App"
+        />
       </div>
       <h2>Conclusion</h2>
       <div class="fonda-conclusion">
@@ -144,7 +207,11 @@
       </div>
       <h2>Chosen Interface</h2>
       <div class="persona-choice">
-        <img class="real-freestyle-machine" src="coke-machine.jpeg" />
+        <img
+          class="real-freestyle-machine"
+          src="coke-machine.jpeg"
+          alt="picture of the coke freestyle machine"
+        />
         <p>
           I decided on the freestyle machine due to its abudnace on campus here
           and since everyone uses it when visiting the dining hall. Its relative
@@ -161,7 +228,11 @@
           Choose a base drink and add any flavor, press the dispense button, and
           a custom drink pours out from the spout.
         </p>
-        <img class="persona-coke-sketch" src="personacokesketch.jpeg" />
+        <img
+          class="persona-coke-sketch"
+          src="personacokesketch.jpeg"
+          alt="sketch and diagram of the coke freestyle machien"
+        />
       </div>
       <h2>Interviewing Students</h2>
 
@@ -321,7 +392,11 @@
       <h2>Storyboards</h2>
       <div class="persona-storyboard">
         <div>
-          <img class="persona-storyboard-1" src="personastoryboard1.jpeg" />
+          <img
+            class="persona-storyboard-1"
+            src="personastoryboard1.jpeg"
+            alt="3 frames of the first half of the storyboard"
+          />
           <p>
             After practice Hailey rushes to the dining hall to get something
             quick before she is late for a lab.
@@ -336,7 +411,11 @@
           </p>
         </div>
         <div>
-          <img class="persona-storyboard-2" src="personastoryboard2.jpeg" />
+          <img
+            class="persona-storyboard-2"
+            src="personastoryboard2.jpeg"
+            alt="3 frames depicting the second half of the storyboard"
+          />
           <p>
             She decides she does not need any flavorings
             <br />
@@ -499,6 +578,47 @@
         </p>
       </div>
     </section>
-    <section class="about"></section>
+    <section class="about">
+      <h1>About Me</h1>
+      <div class="abt-info">
+        <div class="pic1">
+          <img src="IMG_0129.JPG" alt="selfie on a mountain" />
+          <div>
+            <h2><strong>Education and Experience</strong></h2>
+            <ul>
+              <li>Brown University - Sc.B of Computer Science and Economics</li>
+              <li>
+                Web Development and SWE internship with Highway West Vacations
+              </li>
+              <li>
+                Assitant Director of an overnight New Hampshire summer camp
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pic2">
+          <div>
+            <h2><strong>Contact Me!</strong></h2>
+            <ul>
+              <li>Email me at liam_capozza@brown.edu</li>
+              <li>
+                Connect with me on
+                <a
+                  href="https://www.linkedin.com/in/liam-capozza-2b392b250/
+
+                "
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                Check out my
+                <a href="https://github.com/LiamCapozza">GitHub!</a>
+              </li>
+            </ul>
+          </div>
+          <img src="IMG_5839.JPG" alt="parking lot of a hike" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
